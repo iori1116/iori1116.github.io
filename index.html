@@ -1,54 +1,128 @@
 <!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>IORI SAWANO Apps</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-      background: #f7f8fb;
-      color: #111827;
-    }
-    main {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 64px 24px;
-    }
-    h1 {
-      font-size: 32px;
-      margin: 0 0 16px;
-    }
-    h2 {
-      font-size: 20px;
-      margin: 32px 0 8px;
-    }
-    p {
-      color: #4b5563;
-      line-height: 1.8;
-    }
-    a {
-      color: #0891b2;
-      font-weight: 700;
-    }
-    .app {
-      padding: 20px 0;
-      border-top: 1px solid #e5e7eb;
-    }
-  </style>
-</head>
-<body>
-  <main>
-    <h1>IORI SAWANO Apps</h1>
-    <p>個人開発アプリのサポート情報を掲載しています。</p>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="iori1116 の開発者サイト。アプリ情報、サポート、プライバシーポリシー、app-ads.txt の案内を掲載しています。">
+    <title>iori1116 Developer</title>
+    <link rel="stylesheet" href="assets/site.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        if (window.lucide) window.lucide.createIcons();
+      });
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">本文へ移動</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="主要ナビゲーション">
+        <a class="brand" href="index.html" aria-label="iori1116 Developer ホーム">
+          <span class="brand-mark"><i data-lucide="code-2" aria-hidden="true"></i></span>
+          <span>iori1116 Developer</span>
+        </a>
+        <div class="nav-links">
+          <a href="apps.html">Apps</a>
+          <a href="support.html">Support</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="app-ads.txt">app-ads.txt</a>
+        </div>
+      </nav>
+    </header>
 
-    <section class="app">
-      <h2>ヒトログ - 名刺メモ</h2>
-      <p>社会人向けの名刺メモアプリです。名刺だけでなく、一人ひとりの会話、印象、好きなものを記録できます。</p>
-    </section>
+    <main id="main">
+      <section class="hero" aria-label="開発者サイトの紹介">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Independent app developer</p>
+            <h1>iori1116 Developer</h1>
+            <p class="lead">モバイルアプリの公開情報、サポート窓口、プライバシー関連文書、広告認定ファイルをまとめた開発者サイトです。</p>
+            <div class="actions">
+              <a class="button primary" href="support.html"><i data-lucide="message-circle" aria-hidden="true"></i>サポートを見る</a>
+              <a class="button" href="apps.html"><i data-lucide="smartphone" aria-hidden="true"></i>アプリ一覧</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <p><a href="/app-ads.txt">app-ads.txt</a></p>
-  </main>
-</body>
+      <div class="section-inner">
+        <div class="quick-meta" aria-label="サイトの主な情報">
+          <div class="meta-item">
+            <i data-lucide="shield-check" aria-hidden="true"></i>
+            <div><strong>Privacy ready</strong><span>利用者データの扱いを明記</span></div>
+          </div>
+          <div class="meta-item">
+            <i data-lucide="life-buoy" aria-hidden="true"></i>
+            <div><strong>Support pages</strong><span>問い合わせと不具合報告の導線</span></div>
+          </div>
+          <div class="meta-item">
+            <i data-lucide="badge-check" aria-hidden="true"></i>
+            <div><strong>app-ads.txt</strong><span>広告認定ファイルに対応</span></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="section-inner">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Apps</p>
+              <h2>公開中のアプリ</h2>
+            </div>
+            <p>アプリ名、ストアリンク、サポート状況を追加して運用できます。まずはプレースホルダーとして使いやすい構成にしています。</p>
+          </div>
+          <div class="grid">
+            <article class="card accent-green">
+              <div class="app-icon"><i data-lucide="sparkles" aria-hidden="true"></i></div>
+              <h3>App 01</h3>
+              <p>アプリの概要、対象ユーザー、サポート対象バージョンをここに記載します。</p>
+              <a class="card-link" href="support.html"><i data-lucide="arrow-right" aria-hidden="true"></i>サポートへ</a>
+            </article>
+            <article class="card accent-coral">
+              <div class="app-icon coral"><i data-lucide="layout-grid" aria-hidden="true"></i></div>
+              <h3>App 02</h3>
+              <p>ストア公開後に App Store または Google Play へのリンクを追加できます。</p>
+              <a class="card-link" href="apps.html"><i data-lucide="arrow-right" aria-hidden="true"></i>詳細へ</a>
+            </article>
+            <article class="card accent-yellow">
+              <div class="app-icon yellow"><i data-lucide="rocket" aria-hidden="true"></i></div>
+              <h3>Coming Soon</h3>
+              <p>新しいアプリ、アップデート予定、リリースノートの掲載枠として使えます。</p>
+              <a class="card-link" href="apps.html"><i data-lucide="arrow-right" aria-hidden="true"></i>一覧を見る</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="section-inner">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Resources</p>
+              <h2>利用者向け文書</h2>
+            </div>
+            <p>審査や問い合わせ時に必要になりやすいページへ、すぐ移動できる構成です。</p>
+          </div>
+          <div class="resource-list">
+            <a class="resource-link" href="privacy.html"><i data-lucide="lock-keyhole" aria-hidden="true"></i>プライバシーポリシー</a>
+            <a class="resource-link" href="terms.html"><i data-lucide="scroll-text" aria-hidden="true"></i>利用規約</a>
+            <a class="resource-link" href="support.html"><i data-lucide="headphones" aria-hidden="true"></i>サポート</a>
+            <a class="resource-link" href="app-ads.txt"><i data-lucide="file-check-2" aria-hidden="true"></i>app-ads.txt</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>&copy; 2026 iori1116 Developer</span>
+        <div class="footer-links">
+          <a href="https://github.com/iori1116/iori1116.github.io">GitHub</a>
+          <a href="support.html">Support</a>
+          <a href="privacy.html">Privacy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
